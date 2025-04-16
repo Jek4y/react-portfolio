@@ -1,13 +1,17 @@
+
 {
   "name": "react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Jek4y.github.io/react-portfolio",
+
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
